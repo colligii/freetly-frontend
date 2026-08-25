@@ -1,6 +1,7 @@
 import LandingPage from "./landing-page";
 import TestEnviroment from "../../components/testenv";
 import DemoSuccess from "./success";
+import Track from "./track";
 
 export const demoChildren = [
     {
@@ -10,6 +11,10 @@ export const demoChildren = [
     {
         path: "quote/success",
         Component: DemoSuccess
+    },
+    {
+        path: "track/:token",
+        Component: Track
     }
 ]
 
