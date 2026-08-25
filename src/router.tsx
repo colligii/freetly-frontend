@@ -1,7 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router";
-import LandingPage from "./routes";
+import ProductLandingPage from "./routes";
 import Login from "./routes/login";
 import TestEnviroment from "./components/testenv";
+import { demoChildren, DemoLayout } from "./routes/demo/router";
 
 let router = createBrowserRouter([
     {
@@ -14,8 +15,13 @@ let router = createBrowserRouter([
         ] 
     },
     {
+        path: import.meta.env.VITE_DEMO_URL,
+        Component: DemoLayout,
+        children: demoChildren
+    },
+    {
         path: "*",
-        Component: LandingPage
+        Component: ProductLandingPage
     }
 ])
 
