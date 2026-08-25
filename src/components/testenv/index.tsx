@@ -11,7 +11,7 @@ export default function TestEnviroment() {
                 flexGrow="1"
             >
                 {isTestEnv && <Flex
-                    className="bg-red-500 text-white font-bold"
+                    className="bg-red-500 text-white font-bold fixed z-2 w-full"
                     justify="center"
                 >This is a test environemnt nothing that you do here changes the real environemnt.</Flex>}
                 <Outlet />
