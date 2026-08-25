@@ -9,7 +9,7 @@ export const demoChildren = [
         Component: LandingPage
     },
     {
-        path: "success",
+        path: "quote/success",
         Component: DemoSuccess
     }
 ]
